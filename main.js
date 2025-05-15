@@ -10,6 +10,13 @@ console.log("b:", b);
 console.log("c:", c);
 console.log("d:", d);
  
+
+
+let articlesVendu = 100
+
+articlesVendu += 900
+
+console.log(articlesVendu)
 // Objet
 
 var myObject = {
