@@ -1,6 +1,6 @@
 // syntaxe switch
 
-switch (expression) {
+switch (valeur2) {
     case "Kin":
         // instructions à exécuter si expression == valeur1
         console.log("Bonjour"); 
