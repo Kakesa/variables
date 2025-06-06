@@ -1,14 +1,25 @@
 // Objet
+const users = [
+  {
+    name : "Kakesa",
+    age : 27,
+    size : "1m80",
 
-const ticket = {
-  nomFilm: "Avatar",
-  prix : 10,
-  nomSalle : "Salle 1",
-  dateProjection : "10-01-2023 à 09:30", 
+  },
+  {
+    name : "Gertrude",
+    age : 19,
+    size : "1m79"
+  }
+];
+
+console.log(users.length); // Affiche le nombre d'objets dans le tableau
+
+for (let i = 0; i < users.length; i++) {
+  const user = users[i];
+
+  console.log(i, user); 
+
+  
 }
 
-let nom = "Jean Dupont";
-
-let texteAffichage = "Bonjour " + nom + " votre film " + ticket.nomFilm + " est dans la " + ticket.nomSalle + " est le sera projection " + ticket.dateProjection ;
-
-console.log(texteAffichage);
