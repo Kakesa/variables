@@ -1,25 +1,16 @@
-// Objet
-const users = [
-  {
-    name : "Kakesa",
-    age : 27,
-    size : "1m80",
-
+const personne = {
+  name : "Hope",
+  lastname : "Kakesa",
+  age : 27,
+  adresse : {
+    rue : "marine",
+    numero : 38,
+    ville : "Kinshasa",
+    couleurVoiture : "Gray"
   },
-  {
-    name : "Gertrude",
-    age : 19,
-    size : "1m79"
+  fullName : function (){
+    return "Je m'appelle " + this.name + " " + this.lastname;
   }
-];
-
-console.log(users.length); // Affiche le nombre d'objets dans le tableau
-
-for (let i = 0; i < users.length; i++) {
-  const user = users[i];
-
-  console.log(i, user); 
-
-  
 }
 
+document.getElementById("demo").textContent = "Bonjour " + personne.fullName() + " j'habite au numero " + personne.adresse.numero + " de l'avenue " + personne.adresse.rue + " dans la ville de " + personne.adresse.ville + "."

@@ -20,6 +20,8 @@ const matrix = [
     [3,2,1] 
 ];
 
-console.log(matrix[0][0] * matrix[1][1] * matrix[2][2]); // 1
+const result = console.log(matrix[0][0] * matrix[1][1] * matrix[2][2]); // 1
 console.log(matrix[1][1]); // 6
 console.log(matrix[2][2]); // 2
+
+document.getElementById("demo").innerText = "Le film à l'index 10 est : " + maCollectionFilms[10] + "<br>" 
